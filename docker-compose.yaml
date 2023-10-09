@@ -6,9 +6,9 @@ services:
       context: "./"
       dockerfile: "Dockerfile.cloud"
     ports:
-      - 8080:8080
+      - 8000:8000
     volumes:
-      - ./api:/src
+      - ./src:/src
 
   db:
     build:
