@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # DBが起動するのを待つ
-/wait-for-it.sh db:3306 --timeout=30
+./wait-for-it.sh db:3306 --timeout=30
 
 # python -m api.migrate_db
 # ローカル用自動マイグレーション
